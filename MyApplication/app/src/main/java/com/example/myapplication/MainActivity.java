@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -24,6 +23,45 @@ public class MainActivity extends AppCompatActivity {
                 float num1 = Float.parseFloat(firstNumEditText.getText().toString());
                 float num2 = Float.parseFloat(secondNumEditText.getText().toString());
                 float result = num1 + num2;
+                resultTextView.setText(result + "");
+            }
+        });
+        Button multBtn = (Button) findViewById(R.id.MultButton);
+        multBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumberEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                float num1 = Float.parseFloat(firstNumEditText.getText().toString());
+                float num2 = Float.parseFloat(secondNumEditText.getText().toString());
+                float result = num1 * num2;
+                resultTextView.setText(result + "");
+            }
+        });
+        Button subBtn = (Button) findViewById(R.id.SubButton);
+        subBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumberEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                float num1 = Float.parseFloat(firstNumEditText.getText().toString());
+                float num2 = Float.parseFloat(secondNumEditText.getText().toString());
+                float result = num1 - num2;
+                resultTextView.setText(result + "");
+            }
+        });
+    Button divBtn = (Button) findViewById(R.id.DivButton);
+        divBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                EditText firstNumEditText = (EditText) findViewById(R.id.firstNumberEditText);
+                EditText secondNumEditText = (EditText) findViewById(R.id.secondNumEditText);
+                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
+
+                float num1 = Float.parseFloat(firstNumEditText.getText().toString());
+                float num2 = Float.parseFloat(secondNumEditText.getText().toString());
+                float result = num1 / num2;
                 resultTextView.setText(result + "");
             }
         });
