@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">List App</string>
+
+    <string-array name="items">
+        <item>Estoc</item>
+        <item>Khopesh</item>
+        <item>Ram Dao</item>
+        <item>Peach</item>
+        <item>Tomato</item>
+        <item>Sqaush</item>
+    </string-array>
+    <string-array name="prices">
+        <item>$300</item>
+        <item>$430</item>
+        <item>$150</item>
+        <item>$0.99</item>
+        <item>$1.49</item>
+        <item>$0.89</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>European Two-Handed thrusting sword</item>
+        <item>Ancient Egyptian curved sword</item>
+        <item>Bengali Hooked sword used for sacrificial beheadings</item>
+        <item>Fresh peaches from Georgia</item>
+        <item>Fresh salad tomatoes from Ohio</item>
+        <item>Fresh yellow squash from California</item>
+    </string-array>
+</resources>
